@@ -180,4 +180,4 @@ def predict():
         return jsonify({'error': 'Invalid file format. Only .png, .jpg, or .jpeg allowed.'}), 400
 
 if __name__ == '__main__':
-    app.run(host='0.0.0.0', debug=True, port=5000)
+    app.run(host='0.0.0.0', debug=True, port=5000,use_reloader=False)
