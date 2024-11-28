@@ -1,0 +1,142 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background-image: url('../images/back3.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed; /* Make the background static */
+    text-align: center;
+    color: #fff;
+    overflow-x: hidden;
+}
+
+.header {
+    height: 3cm;
+    padding: 0 20px;
+    position: fixed;
+    top: 1.5cm;
+    left: 0;
+    right: 0;
+    z-index: 3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* background-color: rgba(255, 255, 255, 0.9);  */
+    /* box-shadow: 0 4px 2px -2px gray; */
+    
+}
+
+.header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+    color: #043513;
+}
+
+.head{
+    top: 30px;
+}
+.container {
+    padding: 30px;
+    border-radius: 10px;
+    max-width: 400px;
+    margin: 5cm auto 0; /* Start content below the header */
+    background-color: #49988d54; 
+    color: #fff;
+    height:800px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+form {
+    margin: 20px 0;
+}
+
+input[type="file"], #camera {
+    border-radius: 5px;
+    padding: 5px;
+    background-color: #2a694aab; /* Light background for inputs #2a694aab*/
+}
+
+button {
+    padding: 8px 16px;
+    background-color: #8abc87cc; 
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #7fe7bd;
+}
+
+.error {
+    color: #FF4C4C; /* Red color for error messages */
+}
+
+.result {
+    line-height: 3;
+    color: #c24e31; /* Green color for result messages */
+}
+
+video {
+    width: 600px;
+    height: auto;
+    display: none;
+    margin: 0 auto;
+}
+
+canvas {
+    display: none;
+}
+
+#capture-btn {
+    display: none;
+    margin-top: 10px;
+}
+
+#capture-btn.centered {
+    display: block;
+    margin: 10px auto;
+}
+
+.footer {
+    position: fixed;
+    bottom: -0.5cm;
+    left: 0;
+    right: 0;
+    padding: 10px 0;
+    text-align: center;
+    /* background-color: rgba(255, 255, 255, 0.9);  */
+    z-index: 1000;
+    /* box-shadow: 0 -4px 2px -2px gray; */
+}
+
+.footer img {
+    max-width: 100px;
+}
+
+.footer p {
+    margin-top: 8px;
+    font-size: 0.9em;
+}
+
+
+/* Media query for laptop view */
+@media only screen and (min-width: 1200px) and (max-width: 1600px) {
+    .container {
+        max-width: 800px;
+        margin: 160px auto;
+    }
+
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    video {
+        width: 720px;
+    }
+}

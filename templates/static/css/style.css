@@ -1,0 +1,241 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+}
+
+header {
+    background-color: #1F326A;
+    padding: 10px 0;
+    width: 100%;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    width: 100%;
+}
+
+.logo {
+    color: white;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin: 0 15px;
+}
+
+.hero {
+    display: flex;
+    justify-content: space-between;
+    padding: 80px,80px; /* Adjust padding here if needed */
+    background-color: #F5F7FA;
+    width: 100%;
+}
+
+.hero-content {
+    max-width: 50%;
+}
+
+.hero-content h4 {
+    color: #77A0D8;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.hero-content h1 {
+    font-size: 42px;
+    color: #1F326A;
+    margin-bottom: 30px;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 20px;
+}
+
+.services-btn, .book-btn {
+    padding: 15px 30px;
+    text-decoration: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.services-btn {
+    background-color: #D4E7FF;
+    color: #1F326A;
+}
+
+.book-btn {
+    padding: 15px 30px;
+    text-decoration: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    background-color: #1F326A; /* Original background color */
+    color: white; /* Original text color */
+    transition: background-color 0.3s ease; /* Smooth transition for color change */
+}
+
+.book-btn:hover {
+    background-color: #a9abae; /* New background color on hover */
+    color: #1F326A; /* New text color on hover */
+}
+
+.hero-image img {
+    width: 400px;       /* Set a fixed width */
+    height: 450px;      /* Set a fixed height */
+    border-radius: 10px;
+    object-fit: cover; 
+}
+
+.para {
+    line-height: 25px;
+}
+
+header {
+    background-color: #1F326A;
+    padding: 10px 0;
+    width: 100%;
+}
+
+nav {
+    display: flex;
+    justify-content: center; /* Center the logo */
+    align-items: center; /* Align items vertically */
+    padding: 0 20px;
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between; /* Space out the items */
+    align-items: center;
+    max-width: 1200px;
+    width: 100%; /* Full width */
+}
+
+.profile-image {
+    margin-right: auto; /* Pushes the logo to the center */
+}
+
+.profile-image img {
+    width: 50px; 
+    height: 40px; 
+    border-radius: 50%; 
+}
+
+.logo {
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center; /* Center text */
+    flex-grow: 1; /* Allow the logo to grow and take up space */
+}
+
+.main-logo img {
+    width: 200px; /* Adjust size as needed for the main logo */
+    height: 30px; /* Maintain aspect ratio */
+    opacity: 0.3px;
+}
+
+.person-logo img{
+    width: 50px; 
+    height: 30px;
+}
+
+.footer-container {
+    width: 100%;
+    background-color: #F5F7FA; /* Adjust background color as desired */
+    padding: 6px 0;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    text-align: center;
+    
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-content p {
+    font-size: 14px;
+    color: #000000;
+    margin: 5px 0;
+}
+
+.footer-content img {
+    width: 100px; /* Adjust image width for responsiveness */
+    height: auto;
+}
+
+/* Media Queries *//* For Laptops */
+@media (max-width: 1024px) { 
+    .nav-links li {
+        margin: 0 10px;
+    }
+
+    .hero {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 100px 20px; 
+    }
+
+    .hero-content {
+        max-width: 90%;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .hero-image img {
+        width: 300px;
+        margin-top: 20px;
+    }
+}
+
+@media (max-width: 1440px) { 
+    nav {
+        padding: 5px 30px;
+    }
+
+    .hero {
+        padding: 80px 20px; 
+    }
+
+    .hero-content h1 {
+        font-size: 48px;
+    }
+
+    .hero-image img {
+        width: 500px;
+    }
+}
+
+/* Additional styles to remove bottom space */
+body {
+    overflow-x: hidden; /* Prevent horizontal scrolling if needed */
+    flex-direction: column;
+}
